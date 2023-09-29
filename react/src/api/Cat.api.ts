@@ -3,12 +3,12 @@ import { CatInterface } from "../interfaces/Cat.interface";
 
 class CatServices {
    getAllCats() {
-      return api.get("api/cat/");
+      return api.get("api/cats/");
    }
 
    getCatById(id: string | undefined) {
       return api.get(
-         `api/cat/${id}`
+         `api/cats/${id}`
       );
    }
 
