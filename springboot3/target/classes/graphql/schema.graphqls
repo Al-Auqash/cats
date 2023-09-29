@@ -1,0 +1,10 @@
+type Query {
+    findAllSpecies: [Species]
+    findSpeciesById(id: ID): Species
+}
+
+type Species {
+    id: ID
+    species_name: String
+    species: String
+}

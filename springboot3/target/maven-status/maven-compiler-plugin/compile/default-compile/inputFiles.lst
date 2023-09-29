@@ -1,0 +1,13 @@
+/Users/itash/Documents/GitHub/cats/springboot3/src/main/java/com/itash/cats/controller/CatsController.java
+/Users/itash/Documents/GitHub/cats/springboot3/src/main/java/com/itash/cats/model/CatsModel.java
+/Users/itash/Documents/GitHub/cats/springboot3/src/main/java/com/itash/cats/model/CatOriginsModel.java
+/Users/itash/Documents/GitHub/cats/springboot3/src/main/java/com/itash/cats/controller/SpeciesController.java
+/Users/itash/Documents/GitHub/cats/springboot3/src/main/java/com/itash/cats/repository/CatOriginsRepository.java
+/Users/itash/Documents/GitHub/cats/springboot3/src/main/java/com/itash/cats/controller/CatOriginsController.java
+/Users/itash/Documents/GitHub/cats/springboot3/src/main/java/com/itash/cats/CatsApplication.java
+/Users/itash/Documents/GitHub/cats/springboot3/src/main/java/com/itash/cats/model/SpeciesModel.java
+/Users/itash/Documents/GitHub/cats/springboot3/src/main/java/com/itash/cats/controller/SpeciesQueryResolver.java
+/Users/itash/Documents/GitHub/cats/springboot3/src/main/java/com/itash/cats/repository/CatsRepository.java
+/Users/itash/Documents/GitHub/cats/springboot3/src/main/java/com/itash/cats/repository/CatBreedsRepository.java
+/Users/itash/Documents/GitHub/cats/springboot3/src/main/java/com/itash/cats/repository/SpeciesRepository.java
+/Users/itash/Documents/GitHub/cats/springboot3/src/main/java/com/itash/cats/model/CatBreedsModel.java
