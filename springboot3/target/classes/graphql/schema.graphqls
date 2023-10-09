@@ -1,10 +1,16 @@
 type Query {
-    findAllSpecies: [Species]
-    findSpeciesById(id: ID): Species
+  findAllSpecies: [Species]
+  findSpeciesById(id: ID): Species
+}
+
+type Mutation {
+  createSpecies(species: String!, speciesName: String!): Species
+  updateSpecies(id: ID!, species: String!, speciesName: String!): Species
+  deleteSpecies(id: ID!): Boolean!
 }
 
 type Species {
-    id: ID
-    species_name: String
-    species: String
+  id: ID
+  species_name: String
+  species: String
 }
