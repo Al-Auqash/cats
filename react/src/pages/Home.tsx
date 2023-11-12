@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
-import { SpeciesInterface } from "../interfaces/Species.interface";
-import CatApi from "../api/Cat.api";
-import { CatInterface } from "../interfaces/Cat.interface";
+import { useEffect, useState } from 'react';
+import { SpeciesInterface } from '../interfaces/Species.interface';
+import CatApi from '../api/Cat.api';
+import { CatInterface } from '../interfaces/Cat.interface';
 
 const Home = () => {
-
   const [cat, setCat] = useState<CatInterface[]>([]);
 
   const getCat = () => {
@@ -13,13 +12,13 @@ const Home = () => {
         setCat(response.data);
       })
       .catch((err) => {
-        console.log(err)
-      })
-  }
+        console.log(err);
+      });
+  };
 
   useEffect(() => {
     getCat();
-  }, [])
+  }, []);
 
   return (
     <div>
@@ -44,8 +43,8 @@ const Home = () => {
             <td>US</td>
             <td>Maine</td>
           </tr>
-          {
-            cat && cat.map((data) => (
+          {cat &&
+            cat.map((data) => (
               <tr>
                 <td>{data.cat_id}</td>
                 <td>{data.name}</td>
@@ -54,12 +53,11 @@ const Home = () => {
                 <td>{data.origin_name}</td>
                 <td>{data.breed_name}</td>
               </tr>
-            ))
-          }
+            ))}
         </tbody>
       </table>
     </div>
   );
-}
+};
 
 export default Home;

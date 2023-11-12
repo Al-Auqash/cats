@@ -1,13 +1,13 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
-import ReactTable from './pages/table/ReactTable';
+import Dashboard from './pages/Dashboard';
 
 export function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/table" element={<ReactTable />} />
+      <Route path="/dashboard" element={<Dashboard />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
@@ -15,8 +15,8 @@ export function App() {
 
 export function WrappedApp() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <App />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
