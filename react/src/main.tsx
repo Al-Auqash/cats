@@ -5,8 +5,14 @@ import './index.css';
 import client from './apolloClient';
 import { ApolloProvider } from '@apollo/client';
 
+import { ThemeProvider } from "@material-tailwind/react";
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <ApolloProvider client={client}>
-    <WrappedApp />
-  </ApolloProvider>
+  <React.StrictMode>
+    <ApolloProvider client={client}>
+      <ThemeProvider>
+        <WrappedApp />
+      </ThemeProvider>
+    </ApolloProvider>
+  </React.StrictMode>
 );

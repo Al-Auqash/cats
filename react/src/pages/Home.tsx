@@ -7,7 +7,6 @@ import { gql, useQuery } from "@apollo/client";
 import { deleteCat, getAllCats } from "../api/Cat.graphql";
 
 const Home = () => {
-
   const [cat, setCat] = useState<CatInterface[]>([]);
   const [species, setSpecies] = useState<SpeciesInterface[]>([]);
 
@@ -88,6 +87,6 @@ const Home = () => {
       </div>
     </>
   );
-}
+};
 
 export default Home;
