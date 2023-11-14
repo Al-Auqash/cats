@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const URL_NODEJS = "http://localhost:5000/";
-const URL_SPRING_BOOT = "http://localhost:8080/";
+export const URL_NODEJS = "http://localhost:5000/";
+export const URL_SPRING_BOOT = "http://localhost:8080/";
 
 export default axios.create({
    baseURL: URL_SPRING_BOOT,

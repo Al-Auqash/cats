@@ -1,13 +1,15 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
-import ReactTable from './pages/table/ReactTable';
+import CreateCat from './pages/CreateCat';
+import EditCat from './pages/EditCat';
 
 export function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/table" element={<ReactTable />} />
+      <Route path="/create-cat" element={<CreateCat />} />
+      <Route path="/edit-cat/:cat_id" element={<EditCat />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
@@ -15,8 +17,8 @@ export function App() {
 
 export function WrappedApp() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <App />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
