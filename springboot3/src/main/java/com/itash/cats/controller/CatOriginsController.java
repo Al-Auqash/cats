@@ -75,7 +75,7 @@ public class CatOriginsController {
             Optional<CatOriginsModel> models = repository.findById(id);
             if (!models.isEmpty()) {
                 CatOriginsModel catOriginsModel = models.get();
-                catOriginsModel.setOriginsName(reqModel.getOriginsName());
+                catOriginsModel.setOriginName(reqModel.getOriginName());
                 catOriginsModel.setCharacteristics(reqModel.getCharacteristics());
 
                 return new ResponseEntity<>(repository.save(catOriginsModel), HttpStatus.OK);

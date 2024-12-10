@@ -6,9 +6,6 @@ com/itash/cats/CatsApplication.class
 com/itash/cats/controller/SpeciesQueryResolver.class
 com/itash/cats/model/SpeciesModel.class
 com/itash/cats/model/CatOriginsModel.class
-com/itash/cats/controller/CatData.class
-com/itash/cats/controller/CatsController.class
 com/itash/cats/repository/CatBreedsRepository.class
 com/itash/cats/model/CatsModel.class
 com/itash/cats/controller/SpeciesController.class
-com/itash/cats/controller/CatOriginsController.class

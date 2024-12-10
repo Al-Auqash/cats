@@ -30,19 +30,19 @@ public class CatOriginsModel {
         this.description = description;
     }
 
-    public long getCatId() {
+    public long getOriginId() {
         return origin_id;
     }
 
-    public void setCatId(long origin_id) {
+    public void setOriginId(long origin_id) {
         this.origin_id = origin_id;
     }
 
-    public String getOriginsName() {
+    public String getOriginName() {
         return origin_name;
     }
 
-    public void setOriginsName(String origin_name) {
+    public void setOriginName(String origin_name) {
         this.origin_name = origin_name;
     }
 
